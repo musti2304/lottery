@@ -7,24 +7,27 @@ public class Euro {
 	// Spiel Fives
 	private static int minNumberFive = 1;
 	private static int maxNumberFive = 50;
-	private static int[] arrayTableFive = new int[51];
 	private static int numberFive = 0;
 
 	// Eurozahlen
 	private static int minNumberEurozahl = 1;
 	private static int maxNumberEurozahl = 10;
-	private static int[] arrayTableEuroZahl = new int[11];
 	private static int numberEuro = 0;
 	
 	// Output Array
 	private static int[] outputArrayFives = new int[5];
 	private static int[] outputArrayEuro = new int[2];
 
+	private static StopWatch timer = new StopWatch();
+
 	public static void main(String[] args) {
 
-		StopWatch timer = new StopWatch();
+		///////////////////////////// 	     	   	/////////////////////////////
+		/////////////////////////////   		  	/////////////////////////////
+		/////////////////////////////   EUROZAHLEN	/////////////////////////////
+		///////////////////////////// 				/////////////////////////////
+		/////////////////////////////				/////////////////////////////
 
-		///////////////////////////// EUROZAHLEN /////////////////////////////
 		System.out.println("Berechne Eurozahlen . . .");
 
 		timer.start();
@@ -44,7 +47,11 @@ public class Euro {
 		// Reset the timer
 		timer.reset();
 
-		///////////////////////////// FIVES /////////////////////////////
+		///////////////////////////// 	     	   	/////////////////////////////
+		/////////////////////////////   		  	/////////////////////////////
+		/////////////////////////////     FIVES		/////////////////////////////
+		///////////////////////////// 				/////////////////////////////
+		/////////////////////////////				/////////////////////////////
 
 		System.out.println("\nBerechne Fünfer . . .");
 
