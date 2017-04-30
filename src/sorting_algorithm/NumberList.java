@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class NumberList {
 
-	public static void bubbleSort(int[][] array) {
+	public static void bubbleSort(Integer[][] array) {
 		for (int i = 0; i < array.length; i++) {
 			for (int m = array[i].length; m >= 0; m--) {
 				for (int j = 0; j < array[i].length - 1; j++) {
@@ -18,7 +18,7 @@ public class NumberList {
 		System.out.println(Arrays.deepToString(array));
 	}
 
-	private static void swapNumbers(int i, int j, int k, int[][] array) {
+	private static void swapNumbers(int i, int j, int k, Integer[][] array) {
 		int temp;
 		temp = array[i][j];
 		array[i][j] = array[i][k];
@@ -26,7 +26,7 @@ public class NumberList {
 	}
 
 	public static void main(String[] args) {
-		int[][] array = new int[][] {
+		Integer[][] array = new Integer[][] {
 			//Paste the arrays you want to be sorted
 		};
 		bubbleSort(array);
