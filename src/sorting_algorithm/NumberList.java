@@ -1,4 +1,5 @@
 package sorting_algorithm;
+
 import java.util.Arrays;
 
 public class NumberList {
@@ -25,8 +26,8 @@ public class NumberList {
 	}
 
 	public static void main(String[] args) {
-		int[][] array = new int[][] { 
-			
+		int[][] array = new int[][] {
+			//Paste the arrays you want to be sorted
 		};
 		bubbleSort(array);
 	}
