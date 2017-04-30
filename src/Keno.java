@@ -23,27 +23,34 @@ public class Keno {
 
 		System.out.println("\nBerechne Keno Zahlen . . .");
 
-		timer.start();
+		int count = 0;
+		while (count < 2147182) {
+			// timer.start();
 
-		// Loop 6 aus 49
-		for (int i = 0; i < 10; i++) {
-			outputArrayKeno[i] = calcRandomOfSechser(minNumberKeno, maxNumberKeno);
+			// Loop 6 aus 49
+			for (int i = 0; i < 10; i++) {
+				outputArrayKeno[i] = calcRandomOfSechser(minNumberKeno, maxNumberKeno);
+			}
+
+			// Outlines 6 aus 49
+			// System.out.println(Arrays.toString(outputArrayKeno));
+			//
+			// timer.stop();
+			// long elapsedTimeSechser = (timer.getNanoTime() / 1000000);
+			// System.out.println("\nZeit: " + elapsedTimeSechser + "ms");
+			//
+			// System.out.println("\n\nEnde!");
+			// timer.reset();
+			 count++;
+
 		}
-
-		// Outlines 6 aus 49
-		System.out.println(Arrays.toString(outputArrayKeno));
 		Arrays.sort(outputArrayKeno);
 		System.out.println(Arrays.toString(outputArrayKeno));
 
-		timer.stop();
-		long elapsedTimeSechser = (timer.getNanoTime() / 1000000);
-		System.out.println("\nZeit: " + elapsedTimeSechser + "ms");
-
-		System.out.println("\n\nEnde!");
 	}
 
 	public static int calcRandomOfSechser(int min, int max) {
-		for (int i = 0; i < 2147182; i++) {
+		for (int i = 0; i < 9; i++) {
 			numberKeno = min + (int) (Math.random() * ((max - min) + 1));
 		}
 		return numberKeno;
