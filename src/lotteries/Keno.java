@@ -41,5 +41,4 @@ public class Keno {
 		}
 		return numberKeno;
 	}
-
 }
