@@ -1,4 +1,5 @@
 package lotteries;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -22,7 +23,7 @@ public class Lotto {
 	// Output Array
 	public static List<Integer> sixList = new ArrayList<>();
 	public static List<Integer> superList = new ArrayList<>();
-	private static int[] outputArraySix = new int[6];
+	// private static int[] outputArraySix = new int[6];
 	// private static int[] outputArraySuper = new int[1];
 
 	private static StopWatch timer = new StopWatch();
@@ -50,9 +51,11 @@ public class Lotto {
 
 		// Loop 6 aus 49
 		for (int i = 0; i < 6; i++) {
-			int selectedNumber = calcRandomOfSechser(minNumberSechser, maxNumberSechser);
-			if(!(sixList.contains(selectedNumber))) {
-				sixList.add(selectedNumber);
+			while (sixList.size() < 6) {
+				int selectedNumber = calcRandomOfSechser(minNumberSechser, maxNumberSechser);
+				if (!(sixList.contains(selectedNumber))) {
+					sixList.add(selectedNumber);
+				}
 			}
 		}
 
