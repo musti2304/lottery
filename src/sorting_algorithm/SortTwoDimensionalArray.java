@@ -2,7 +2,7 @@ package sorting_algorithm;
 
 import java.util.Arrays;
 
-public class NumberList {
+public class SortTwoDimensionalArray {
 
 	public static void bubbleSort(Integer[][] array) {
 		for (int i = 0; i < array.length; i++) {
@@ -27,7 +27,7 @@ public class NumberList {
 
 	public static void main(String[] args) {
 		Integer[][] array = new Integer[][] {
-			//Paste the arrays you want to be sorted
+			//Paste the two dimensional array you want to be sorted
 		};
 		bubbleSort(array);
 	}
