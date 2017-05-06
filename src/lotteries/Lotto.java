@@ -47,14 +47,14 @@ public class Lotto {
 	}
 
 	public static int calcRandomSix(int min, int max) {
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 15537572; i++) {
 			numberSix = min + (int) (Math.random() * ((max - min) + 1));
 		}
 		return numberSix;
 	}
 
 	public static int calcRandomSuperzahl(int min, int max) {
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 15537572; i++) {
 			numberSuper = min + (int) (Math.random() * ((max - min) + 1));
 		}
 		return numberSuper;

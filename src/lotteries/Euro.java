@@ -55,14 +55,14 @@ public class Euro {
 	}
 
 	public static int calcRandomFive(int min, int max) {
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 3405149; i++) {
 			numberFive = min + (int) (Math.random() * ((max - min) + 1));
 		}
 		return numberFive;
 	}
 
 	public static int calcRandomEurozahl(int min, int max) {
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 3405149; i++) {
 			numberEuro = min + (int) (Math.random() * ((max - min) + 1));
 		}
 		return numberEuro;
